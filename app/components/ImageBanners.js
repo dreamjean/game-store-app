@@ -11,7 +11,7 @@ const ImageBanners = ({ items,  navigation, route, routeName, ...otherProps }) =
         <TouchableImage
           key={index}
           image={item.cover ? item.cover : item}
-          onpress={() => navigation.navigate(routeName, item)}
+          onPress={() => navigation.navigate(routeName, item)}
           {...otherProps}
         />
       ) )}
